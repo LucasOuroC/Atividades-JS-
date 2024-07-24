@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/atividade2.css" />
+    <title>Atividade2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+      <div>
+        <p>
+          <label for="mensagem">Digite o ano de seu nascimento:</label>
+          <input type="text" id="ano"/>
+        </p>
+        <p>
+          <label for="">Sexo:</label>
+          <input type= "radio" name="radsex" value="Homem" id="masc" checked> 
+          <label for="">Masculino</label>
+          <input type="radio" name="radsex" value="Mulher" id="fem"> 
+          <label for="">Feminino</label>
+        </p>
+        <p id="msg"></p>
+      </div>
+      <div>
+        <img src="/img/jovemM.jpg" id="img" alt="" />
+        <p>
+          <input type="button" value="Verificar" onclick="calcula()">
+        </p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="/atividade02.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+            color: rgb(255, 255, 255);
+            font: normal 18pt Arial;
+        }
+        div#area{
+            background: aquamarine;
+            border: solid black 1px;
+            color: black;
+            width: 120px;
+            height: 60px;
+            padding: 2px;
+            margin: auto;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            line-height: 2;
+
+        }
+        div#area:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <div id="area">Interaja...</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(`Esta escrito assim: '`+ p1.innerHTML+ `'`)
+
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        function clicou(){
+            a.innerText= "Clicou!!!"
+            a.style.background= "Orange"
+        }
+
+        function entrou(){
+            a.innerText =  'Entrou!!'
+            a.style.background = 'Green'
+        }
+
+        function saiu(){
+            a.innerText =  'Saiu!!'
+            a.style.background = 'Red'
+        }
+    </script>
+</body>
+</html>
